@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8F88F4A-2470-45A6-AD09-C9BFD121B515</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Endless</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5D62B42A-AFD6-4682-95F5-821440667C03</key>
+		<string>https://github.com/johngulb/Unlimited-Scrolling-Feed.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Endless/Endless.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5D62B42A-AFD6-4682-95F5-821440667C03</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/johngulb/Unlimited-Scrolling-Feed.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5D62B42A-AFD6-4682-95F5-821440667C03</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5D62B42A-AFD6-4682-95F5-821440667C03</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Unlimited-Scrolling-Feed</string>
+		</dict>
+	</array>
+</dict>
+</plist>

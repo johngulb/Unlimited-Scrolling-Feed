@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C79E2FC118E6589800586294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E2FC018E6589800586294 /* Foundation.framework */; };
+		C79E2FC318E6589800586294 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E2FC218E6589800586294 /* CoreGraphics.framework */; };
+		C79E2FC518E6589800586294 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E2FC418E6589800586294 /* UIKit.framework */; };
+		C79E2FCB18E6589800586294 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79E2FC918E6589800586294 /* InfoPlist.strings */; };
+		C79E2FCD18E6589800586294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E2FCC18E6589800586294 /* main.m */; };
+		C79E2FD118E6589800586294 /* MF5AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E2FD018E6589800586294 /* MF5AppDelegate.m */; };
+		C79E2FD318E6589800586294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79E2FD218E6589800586294 /* Images.xcassets */; };
+		C79E2FDA18E6589800586294 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E2FD918E6589800586294 /* XCTest.framework */; };
+		C79E2FDB18E6589800586294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E2FC018E6589800586294 /* Foundation.framework */; };
+		C79E2FDC18E6589800586294 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E2FC418E6589800586294 /* UIKit.framework */; };
+		C79E2FE418E6589800586294 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79E2FE218E6589800586294 /* InfoPlist.strings */; };
+		C79E2FE618E6589800586294 /* EndlessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E2FE518E6589800586294 /* EndlessTests.m */; };
+		C79E2FF218E658BD00586294 /* MF5FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E2FF018E658BD00586294 /* MF5FeedViewController.m */; };
+		C79E2FF518E6593100586294 /* FeedTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79E2FF418E6593100586294 /* FeedTableView.xib */; };
+		C79E2FF718E6593800586294 /* FeedScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79E2FF618E6593800586294 /* FeedScrollView.xib */; };
+		C79E2FF918E6593F00586294 /* FeedCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79E2FF818E6593F00586294 /* FeedCollectionView.xib */; };
+		C79E2FFC18E659D600586294 /* MF5Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E2FFB18E659D600586294 /* MF5Feed.m */; };
+		C79E2FFF18E65F0F00586294 /* MF5FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E2FFE18E65F0F00586294 /* MF5FeedTableViewController.m */; };
+		C79E300318E65F3500586294 /* MF5FeedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E300218E65F3500586294 /* MF5FeedCollectionViewController.m */; };
+		C79E300818E6867600586294 /* MF5ReloadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E300618E6867600586294 /* MF5ReloadingViewController.m */; };
+		C79E300918E6867600586294 /* ReloadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79E300718E6867600586294 /* ReloadingView.xib */; };
+		C79E300D18E8BED200586294 /* MF5LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E300B18E8BED200586294 /* MF5LoadingViewController.m */; };
+		C79E300E18E8BED200586294 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79E300C18E8BED200586294 /* LoadingView.xib */; };
+		C79E301218E8C07F00586294 /* UIView+FrameHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E301118E8C07F00586294 /* UIView+FrameHelp.m */; };
+		C79E301918E8CE0C00586294 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79E301818E8CE0C00586294 /* Items.storyboard */; };
+		C79E301C18E8CE1D00586294 /* MF5ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79E301B18E8CE1D00586294 /* MF5ItemsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C79E2FDD18E6589800586294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C79E2FB518E6589800586294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C79E2FBC18E6589800586294;
+			remoteInfo = Endless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C79E2FBD18E6589800586294 /* Endless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Endless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79E2FC018E6589800586294 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C79E2FC218E6589800586294 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C79E2FC418E6589800586294 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C79E2FC818E6589800586294 /* Endless-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Endless-Info.plist"; sourceTree = "<group>"; };
+		C79E2FCA18E6589800586294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C79E2FCC18E6589800586294 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C79E2FCE18E6589800586294 /* Endless-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Endless-Prefix.pch"; sourceTree = "<group>"; };
+		C79E2FCF18E6589800586294 /* MF5AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MF5AppDelegate.h; sourceTree = "<group>"; };
+		C79E2FD018E6589800586294 /* MF5AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MF5AppDelegate.m; sourceTree = "<group>"; };
+		C79E2FD218E6589800586294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C79E2FD818E6589800586294 /* EndlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EndlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79E2FD918E6589800586294 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C79E2FE118E6589800586294 /* EndlessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EndlessTests-Info.plist"; sourceTree = "<group>"; };
+		C79E2FE318E6589800586294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C79E2FE518E6589800586294 /* EndlessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndlessTests.m; sourceTree = "<group>"; };
+		C79E2FEF18E658BD00586294 /* MF5FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF5FeedViewController.h; sourceTree = "<group>"; };
+		C79E2FF018E658BD00586294 /* MF5FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF5FeedViewController.m; sourceTree = "<group>"; };
+		C79E2FF418E6593100586294 /* FeedTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableView.xib; sourceTree = "<group>"; };
+		C79E2FF618E6593800586294 /* FeedScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedScrollView.xib; sourceTree = "<group>"; };
+		C79E2FF818E6593F00586294 /* FeedCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCollectionView.xib; sourceTree = "<group>"; };
+		C79E2FFA18E659D600586294 /* MF5Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF5Feed.h; sourceTree = "<group>"; };
+		C79E2FFB18E659D600586294 /* MF5Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF5Feed.m; sourceTree = "<group>"; };
+		C79E2FFD18E65F0F00586294 /* MF5FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF5FeedTableViewController.h; sourceTree = "<group>"; };
+		C79E2FFE18E65F0F00586294 /* MF5FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF5FeedTableViewController.m; sourceTree = "<group>"; };
+		C79E300118E65F3500586294 /* MF5FeedCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF5FeedCollectionViewController.h; sourceTree = "<group>"; };
+		C79E300218E65F3500586294 /* MF5FeedCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF5FeedCollectionViewController.m; sourceTree = "<group>"; };
+		C79E300518E6867600586294 /* MF5ReloadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF5ReloadingViewController.h; sourceTree = "<group>"; };
+		C79E300618E6867600586294 /* MF5ReloadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF5ReloadingViewController.m; sourceTree = "<group>"; };
+		C79E300718E6867600586294 /* ReloadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReloadingView.xib; sourceTree = "<group>"; };
+		C79E300A18E8BED200586294 /* MF5LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF5LoadingViewController.h; sourceTree = "<group>"; };
+		C79E300B18E8BED200586294 /* MF5LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF5LoadingViewController.m; sourceTree = "<group>"; };
+		C79E300C18E8BED200586294 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		C79E301018E8C07F00586294 /* UIView+FrameHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameHelp.h"; sourceTree = "<group>"; };
+		C79E301118E8C07F00586294 /* UIView+FrameHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameHelp.m"; sourceTree = "<group>"; };
+		C79E301818E8CE0C00586294 /* Items.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
+		C79E301A18E8CE1D00586294 /* MF5ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MF5ItemsViewController.h; path = ../MF5ItemsViewController.h; sourceTree = "<group>"; };
+		C79E301B18E8CE1D00586294 /* MF5ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MF5ItemsViewController.m; path = ../MF5ItemsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C79E2FBA18E6589800586294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E2FC318E6589800586294 /* CoreGraphics.framework in Frameworks */,
+				C79E2FC518E6589800586294 /* UIKit.framework in Frameworks */,
+				C79E2FC118E6589800586294 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79E2FD518E6589800586294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E2FDA18E6589800586294 /* XCTest.framework in Frameworks */,
+				C79E2FDC18E6589800586294 /* UIKit.framework in Frameworks */,
+				C79E2FDB18E6589800586294 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C79E2FB418E6589800586294 = {
+			isa = PBXGroup;
+			children = (
+				C79E2FC618E6589800586294 /* Endless */,
+				C79E2FDF18E6589800586294 /* EndlessTests */,
+				C79E2FBF18E6589800586294 /* Frameworks */,
+				C79E2FBE18E6589800586294 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C79E2FBE18E6589800586294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FBD18E6589800586294 /* Endless.app */,
+				C79E2FD818E6589800586294 /* EndlessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C79E2FBF18E6589800586294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FC018E6589800586294 /* Foundation.framework */,
+				C79E2FC218E6589800586294 /* CoreGraphics.framework */,
+				C79E2FC418E6589800586294 /* UIKit.framework */,
+				C79E2FD918E6589800586294 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C79E2FC618E6589800586294 /* Endless */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FCF18E6589800586294 /* MF5AppDelegate.h */,
+				C79E2FD018E6589800586294 /* MF5AppDelegate.m */,
+				C79E301A18E8CE1D00586294 /* MF5ItemsViewController.h */,
+				C79E301B18E8CE1D00586294 /* MF5ItemsViewController.m */,
+				C79E301818E8CE0C00586294 /* Items.storyboard */,
+				C79E301318E8CDD200586294 /* Feed */,
+				C79E301418E8CDEB00586294 /* Helpers */,
+				C79E2FD218E6589800586294 /* Images.xcassets */,
+				C79E2FC718E6589800586294 /* Supporting Files */,
+			);
+			path = Endless;
+			sourceTree = "<group>";
+		};
+		C79E2FC718E6589800586294 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FC818E6589800586294 /* Endless-Info.plist */,
+				C79E2FC918E6589800586294 /* InfoPlist.strings */,
+				C79E2FCC18E6589800586294 /* main.m */,
+				C79E2FCE18E6589800586294 /* Endless-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C79E2FDF18E6589800586294 /* EndlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FE518E6589800586294 /* EndlessTests.m */,
+				C79E2FE018E6589800586294 /* Supporting Files */,
+			);
+			path = EndlessTests;
+			sourceTree = "<group>";
+		};
+		C79E2FE018E6589800586294 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FE118E6589800586294 /* EndlessTests-Info.plist */,
+				C79E2FE218E6589800586294 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C79E300018E65F1B00586294 /* Table Feed */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FFD18E65F0F00586294 /* MF5FeedTableViewController.h */,
+				C79E2FFE18E65F0F00586294 /* MF5FeedTableViewController.m */,
+				C79E2FF418E6593100586294 /* FeedTableView.xib */,
+			);
+			name = "Table Feed";
+			sourceTree = "<group>";
+		};
+		C79E300418E65F3E00586294 /* Collection Feed */ = {
+			isa = PBXGroup;
+			children = (
+				C79E300118E65F3500586294 /* MF5FeedCollectionViewController.h */,
+				C79E300218E65F3500586294 /* MF5FeedCollectionViewController.m */,
+				C79E2FF818E6593F00586294 /* FeedCollectionView.xib */,
+			);
+			name = "Collection Feed";
+			sourceTree = "<group>";
+		};
+		C79E300F18E8BFAA00586294 /* Loading Views */ = {
+			isa = PBXGroup;
+			children = (
+				C79E300518E6867600586294 /* MF5ReloadingViewController.h */,
+				C79E300618E6867600586294 /* MF5ReloadingViewController.m */,
+				C79E300718E6867600586294 /* ReloadingView.xib */,
+				C79E300A18E8BED200586294 /* MF5LoadingViewController.h */,
+				C79E300B18E8BED200586294 /* MF5LoadingViewController.m */,
+				C79E300C18E8BED200586294 /* LoadingView.xib */,
+			);
+			name = "Loading Views";
+			sourceTree = "<group>";
+		};
+		C79E301318E8CDD200586294 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2FFA18E659D600586294 /* MF5Feed.h */,
+				C79E2FFB18E659D600586294 /* MF5Feed.m */,
+				C79E2FEF18E658BD00586294 /* MF5FeedViewController.h */,
+				C79E2FF018E658BD00586294 /* MF5FeedViewController.m */,
+				C79E2FF618E6593800586294 /* FeedScrollView.xib */,
+				C79E300F18E8BFAA00586294 /* Loading Views */,
+				C79E300018E65F1B00586294 /* Table Feed */,
+				C79E300418E65F3E00586294 /* Collection Feed */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		C79E301418E8CDEB00586294 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C79E301018E8C07F00586294 /* UIView+FrameHelp.h */,
+				C79E301118E8C07F00586294 /* UIView+FrameHelp.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C79E2FBC18E6589800586294 /* Endless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79E2FE918E6589800586294 /* Build configuration list for PBXNativeTarget "Endless" */;
+			buildPhases = (
+				C79E2FB918E6589800586294 /* Sources */,
+				C79E2FBA18E6589800586294 /* Frameworks */,
+				C79E2FBB18E6589800586294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Endless;
+			productName = Endless;
+			productReference = C79E2FBD18E6589800586294 /* Endless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C79E2FD718E6589800586294 /* EndlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79E2FEC18E6589800586294 /* Build configuration list for PBXNativeTarget "EndlessTests" */;
+			buildPhases = (
+				C79E2FD418E6589800586294 /* Sources */,
+				C79E2FD518E6589800586294 /* Frameworks */,
+				C79E2FD618E6589800586294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C79E2FDE18E6589800586294 /* PBXTargetDependency */,
+			);
+			name = EndlessTests;
+			productName = EndlessTests;
+			productReference = C79E2FD818E6589800586294 /* EndlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C79E2FB518E6589800586294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MF5;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "John Gulbronson";
+				TargetAttributes = {
+					C79E2FD718E6589800586294 = {
+						TestTargetID = C79E2FBC18E6589800586294;
+					};
+				};
+			};
+			buildConfigurationList = C79E2FB818E6589800586294 /* Build configuration list for PBXProject "Endless" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C79E2FB418E6589800586294;
+			productRefGroup = C79E2FBE18E6589800586294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C79E2FBC18E6589800586294 /* Endless */,
+				C79E2FD718E6589800586294 /* EndlessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C79E2FBB18E6589800586294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E2FF718E6593800586294 /* FeedScrollView.xib in Resources */,
+				C79E301918E8CE0C00586294 /* Items.storyboard in Resources */,
+				C79E300918E6867600586294 /* ReloadingView.xib in Resources */,
+				C79E2FCB18E6589800586294 /* InfoPlist.strings in Resources */,
+				C79E2FF518E6593100586294 /* FeedTableView.xib in Resources */,
+				C79E300E18E8BED200586294 /* LoadingView.xib in Resources */,
+				C79E2FD318E6589800586294 /* Images.xcassets in Resources */,
+				C79E2FF918E6593F00586294 /* FeedCollectionView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79E2FD618E6589800586294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E2FE418E6589800586294 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C79E2FB918E6589800586294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E2FFF18E65F0F00586294 /* MF5FeedTableViewController.m in Sources */,
+				C79E300318E65F3500586294 /* MF5FeedCollectionViewController.m in Sources */,
+				C79E300D18E8BED200586294 /* MF5LoadingViewController.m in Sources */,
+				C79E2FFC18E659D600586294 /* MF5Feed.m in Sources */,
+				C79E301C18E8CE1D00586294 /* MF5ItemsViewController.m in Sources */,
+				C79E301218E8C07F00586294 /* UIView+FrameHelp.m in Sources */,
+				C79E2FF218E658BD00586294 /* MF5FeedViewController.m in Sources */,
+				C79E2FCD18E6589800586294 /* main.m in Sources */,
+				C79E2FD118E6589800586294 /* MF5AppDelegate.m in Sources */,
+				C79E300818E6867600586294 /* MF5ReloadingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79E2FD418E6589800586294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E2FE618E6589800586294 /* EndlessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C79E2FDE18E6589800586294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C79E2FBC18E6589800586294 /* Endless */;
+			targetProxy = C79E2FDD18E6589800586294 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C79E2FC918E6589800586294 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79E2FCA18E6589800586294 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C79E2FE218E6589800586294 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79E2FE318E6589800586294 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C79E2FE718E6589800586294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C79E2FE818E6589800586294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C79E2FEA18E6589800586294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless/Endless-Prefix.pch";
+				INFOPLIST_FILE = "Endless/Endless-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C79E2FEB18E6589800586294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless/Endless-Prefix.pch";
+				INFOPLIST_FILE = "Endless/Endless-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C79E2FED18E6589800586294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Endless.app/Endless";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless/Endless-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EndlessTests/EndlessTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C79E2FEE18E6589800586294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Endless.app/Endless";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless/Endless-Prefix.pch";
+				INFOPLIST_FILE = "EndlessTests/EndlessTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C79E2FB818E6589800586294 /* Build configuration list for PBXProject "Endless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79E2FE718E6589800586294 /* Debug */,
+				C79E2FE818E6589800586294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79E2FE918E6589800586294 /* Build configuration list for PBXNativeTarget "Endless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79E2FEA18E6589800586294 /* Debug */,
+				C79E2FEB18E6589800586294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79E2FEC18E6589800586294 /* Build configuration list for PBXNativeTarget "EndlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79E2FED18E6589800586294 /* Debug */,
+				C79E2FEE18E6589800586294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C79E2FB518E6589800586294 /* Project object */;
+}
